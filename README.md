@@ -29,7 +29,7 @@ Pagina que calcula el IMC y hace recomendaciones.
 ### Sobre el HTML
 - [ ] Todas las etiquetas deben estar en minúscula
 - [ ] Poner comillas a todos los atributos
-- [ ] Title debe contener el título de la página
+- [X] Title debe contener el título de la página
 - [X] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripcion y palabras clave
 - [X] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, main, section, article, footer)
 - [X] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
