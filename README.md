@@ -21,38 +21,38 @@ Pagina que calcula el IMC y hace recomendaciones.
 ### Sobre el Proyecto General
 - [X] La página principal debe llamarse index
 - [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
-- [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
+- [X] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] Se debe emplear algún favicon
 - [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
-- [ ] Debe haber navegación entre todas las páginas
+- [X] Debe haber navegación entre todas las páginas
 
 ### Sobre el HTML
-- [ ] Todas las etiquetas deben estar en minúscula
-- [ ] Poner comillas a todos los atributos
+- [X] Todas las etiquetas deben estar en minúscula
+- [X] Poner comillas a todos los atributos
 - [X] Title debe contener el título de la página
 - [X] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripcion y palabras clave
 - [X] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, main, section, article, footer)
 - [X] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
 - [X] Debe haber por lo menos una etiqueta ```<img>``` en la página.
 - [X] La estructura de la página debe estar definida con ```<div></div>```
-- [ ] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` ó ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
+- [X] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` ó ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
 - [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
-- [ ] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
-- [ ] No utilizar etiquetas deprecadas.
-- [ ] Todas las etiquetas deben estar correctamente cerradas
-- [ ] Los ids de los elementos deben ser unívocos
+- [X] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
+- [X] No utilizar etiquetas deprecadas.
+- [X] Todas las etiquetas deben estar correctamente cerradas
+- [X] Los ids de los elementos deben ser unívocos
 
 ### Sobre el CSS
-- [ ] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
-- [ ] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
+- [X] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
+- [X] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
 - [ ] Se debe emplear pseudoclase
 - [X] No emplear !important
 
 ### Sobre Accesibilidad:
 - [ ] Toda imagen debe tener su etiqueta alt
-- [ ] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
-- [ ] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
-- [ ] Si hay una tabla en la página, debe contener ```<caption></caption>```
+- [X] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
+- [X] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
+- [X] Si hay una tabla en la página, debe contener ```<caption></caption>```
 
 ### Sobre las correcciones
 * Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
