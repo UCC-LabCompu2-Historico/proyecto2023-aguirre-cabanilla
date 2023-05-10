@@ -1,6 +1,6 @@
 # Energym
 Pagina oficial Energym.
-Link al sitio:[Gimnasio](https://ucc-labcompu2.github.io/proyecto2023-aguirre-cabanilla/index.html)
+Link al sitio:[Gimnasio](https://ucc-labcompu2.github.io/proyecto2023-aguirre-cabanilla/)
 ## Autores
 *Aguirre Ignacio Facundo 
 *Cabanilla Tomas
