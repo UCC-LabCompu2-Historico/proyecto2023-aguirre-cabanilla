@@ -1,5 +1,5 @@
-# Stayfit
-Pagina que calcula el IMC y hace recomendaciones.
+# Energym
+Pagina oficial Energym.
 ## Autores
 *Aguirre Ignacio Facundo 
 *Cabanilla Tomas
@@ -20,10 +20,10 @@ Pagina que calcula el IMC y hace recomendaciones.
 
 ### Sobre el Proyecto General
 - [X] La página principal debe llamarse index
-- [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
+- [X] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
 - [X] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
-- [ ] Se debe emplear algún favicon
-- [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
+- [X] Se debe emplear algún favicon
+- [X] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
 - [X] Debe haber navegación entre todas las páginas
 
 ### Sobre el HTML
@@ -36,7 +36,7 @@ Pagina que calcula el IMC y hace recomendaciones.
 - [X] Debe haber por lo menos una etiqueta ```<img>``` en la página.
 - [X] La estructura de la página debe estar definida con ```<div></div>```
 - [X] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` ó ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
-- [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
+- [X] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
 - [X] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
 - [X] No utilizar etiquetas deprecadas.
 - [X] Todas las etiquetas deben estar correctamente cerradas
@@ -45,11 +45,11 @@ Pagina que calcula el IMC y hace recomendaciones.
 ### Sobre el CSS
 - [X] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
 - [X] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
-- [ ] Se debe emplear pseudoclase
+- [X] Se debe emplear pseudoclase
 - [X] No emplear !important
 
 ### Sobre Accesibilidad:
-- [ ] Toda imagen debe tener su etiqueta alt
+- [X] Toda imagen debe tener su etiqueta alt
 - [X] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
 - [X] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
 - [X] Si hay una tabla en la página, debe contener ```<caption></caption>```

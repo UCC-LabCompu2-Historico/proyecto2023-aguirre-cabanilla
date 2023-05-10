@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Energym</title>
+    <meta content="Aguirre Ignacio,Cabanilla Tomas" name="autores">
+    <meta content="Mi gimnasio" name="descripcion">
+    <meta content="gym,fitness,crossfit" name="palabras-principales">
+    <link rel="stylesheet" href="inscripcion.css" type="text/css">
+    <link rel="icon" href="imagenes/logo_gym.ico">
+</head>
+
+<body>
+<header>
+    <h1>Energym</h1>
+    <img id="logo" src="imagenes/logo_gym.png" alt="logo">
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="nuestros_productos.html">Nuestros productos</a>
+    <a href="clases.html">Clases</a>
+</nav>
+<div>
+    <h2>Inscripcion al gimnasio</h2>
+    <form id="formulario_inscripcion">
+        <p>
+            <label for="nombre"> Nombre:</label> <input type="text" name="nombre" placeholder="nombre" id="nombre">
+        </p>
+        <p>
+            <label for="apellido">Apellido:</label> <input type="text" name="apellido" placeholder="apellido"
+                                                           id="apellido">
+        </p>
+        <p>
+            Sexo: <label for="masculino"> Masculino</label> <input type="radio" name="Sexo" value="masculino"
+                                                                   id="masculino">
+            <label for="femenino">Femenino</label> <input type="radio" name="Sexo" value="Femenino" id="femenino">
+        </p>
+        <p>
+            <label for="edad"> Edad:</label> <input type="number" name="edad" placeholder="edad" id="edad">
+        </p>
+        <p>
+            <label for="email"> Email:</label> <input type="email" name="email" placeholder="email@dominio.com"
+                                                      id="email">
+        </p>
+
+        <p>
+            <label for="numero_telefono"> Nro. de telefono:</label> <input type="tel" name="tel"
+                                                                           placeholder="nro.telefono"
+                                                                           id="numero_telefono">
+        </p>
+
+        <p>
+            <label for="numero_de_tarjeta"> Numero de tarjeta:</label> <input type="text" name="numero_de_tarjeta"
+                                                                              placeholder="Nro de tarjeta"
+                                                                              pattern="[0-9]{13,16}" required
+                                                                              id="numero_de_tarjeta">
+        </p>
+        <p>
+            <label for="codigo_seguridad"> Codigo de seguridad:</label> <input type="number" name="codigo_seguridad"
+                                                                               placeholder="cod.seguridad"
+                                                                               id="codigo_seguridad">
+
+        </p>
+
+        <p>
+            <label for="tipo_de_pago">Tipo de tarjeta:</label>
+            <select id="tipo_de_pago">
+                <option value="mastercard">Mastercard</option>
+                <option value="naranjax">Naranja x</option>
+                <option value="visa">Visa</option>
+
+            </select>
+        </p>
+        <p>
+            <label for="comentario"> Agregue un comentario:</label> <textarea id="comentario"> </textarea>
+        </p>
+        <p>
+            <button id="boton" type="button">Inscribirse</button>
+        </p>
+
+    </form>
+
+</div>
+
+</body>
+</html>

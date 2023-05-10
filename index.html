@@ -2,99 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gym</title>
+    <title>Energym</title>
     <meta content="Aguirre Ignacio,Cabanilla Tomas" name="autores">
-    <meta content="Calculadora de IMC" name="descripcion">
-    <meta content="IMC,fit,dieta,peso" name="palabras-principales">
-    <link rel="stylesheet" href="Estilo.css" type="text/css">
-</head>
+    <meta content="Mi gimnasio" name="descripcion">
+    <meta content="gym,fitness,crossfit" name="palabras-principales">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="icon" href="imagenes/logo_gym.ico">
 
 <body>
 
 <header>
-    <h1>Gym</h1>
+    <h1>Energym</h1>
+    <img id="logo" src="imagenes/logo_gym.png" alt="logo">
 </header>
 
 <nav>
-    <a href="personal_trainer.html">Acerca de nosotros</a>
     <a href="nuestros_productos.html">Nuestros productos</a>
     <a href="clases.html">Clases</a>
 </nav>
 
 
-
 <section id="instalaciones">
     <h2>Nuestras Instalaciones</h2>
-    <div class="mosaic">
-        <div class="item">
-            <img src="imagenes/instalacion4.jpeg">
-
+    <div class="mosaico">
+        <div class="fila">
+            <img src="imagenes/instalacion1.jpg" alt="instalacion1">
+            <img src="imagenes/instalacion2.jpg" alt="instalacion2">
+            <img src="imagenes/instalacion3.jpg" alt="instalacion3">
         </div>
-        <div class="item">
-            <img src="imagenes/instalacion3.jpg">
-
-        </div>
-        <div class="item">
-            <img src="imagenes/instalacion2.jpg">
-
-        </div>
-        <div class="item">
-            <img src="imagenes/instalacion1.jpg">
-
+        <div class="fila">
+            <img src="imagenes/instalacion4.jpeg" alt="instalacion4">
+            <img src="imagenes/instalacion5.jpg" alt="instalacion5">
+            <img src="imagenes/instalacion6.jpg" alt="instalacion6">
         </div>
     </div>
-
 
 </section>
 
+<section>
+    <div id="horarios">
+        <h2>Nuestros Horarios</h2>
+        <img src="imagenes/hoaririo_final.jpg" alt="horarios">
+    </div>
+</section>
+
 <section id="inscripcion">
-<h3>Inscripcion</h3>
+    <h2>Inscripcion</h2>
+
+    <section id="planes">
+        <div>
+            <h2>Plan basico</h2>
+            <ul>
+                <li>3 dias a la semana</li>
+                <li>Plan personalizado</li>
+                <li>Dietas general</li>
+                <li>$5500</li>
+            </ul>
+
+            <button type="button">
+                <a href="inscripcion.html">Inscribirse</a>
+            </button>
+        </div>
+        <div>
+            <h2>Pase libre</h2>
+            <ul>
+                <li>6 dias a la semana</li>
+                <li>Plan personalizado</li>
+                <li>Dieta general</li>
+                <li>$6500</li>
+            </ul>
+
+            <button type="button">
+                <a href="inscripcion.html">Inscribirse</a>
+            </button>
+        </div>
+        <div>
+            <h2>Pase premium</h2>
+            <ul>
+                <li>6 dias a la semana</li>
+                <li>Plan personalizado</li>
+                <li>Dieta personalizada</li>
+                <li>$7500</li>
+            </ul>
 
 
-<div id="planes">
-    <div>
-        <h2>Plan basico</h2>
-        <ul>
-            <li>3 dias a la semana</li>
-            <li>Plan personalizado</li>
-        </ul>
-        <p>
-            $5500
-        </p>
-        <button type="button">
-            <a href="Inscripcion.html">Inscribirse</a>
-        </button>
-    </div>
-    <div>
-        <h2>Pase libre</h2>
-        <ul>
-            <li>6 dias a la semana</li>
-            <li>Plan personalizado</li>
-        </ul>
-        <p>
-            $6500
-        </p>
-        <button type="button">
-            <a href="Inscripcion.html">Inscribirse</a>
-        </button>
-    </div>
-    <div>
-        <h2>Pase premium</h2>
-        <ul>
-            <li>6 dias a la semana</li>
-            <li>Plan personalizado</li>
-            <li>Dieta personalizada</li>
-        </ul>
-        <p>
-            $7500
-        </p>
-
-        <button type="button">
-            <a href="Inscripcion.html">Inscribirse</a>
-
-        </button>
-    </div>
-</div>
+            <button id="boton" type="button">
+                <a href="inscripcion.html">Inscribirse</a>
+            </button>
+        </div>
+    </section>
 
 </section>
 
