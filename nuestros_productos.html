@@ -8,6 +8,7 @@
     <meta content="gym,fitness,crossfit" name="palabras-principales">
     <link rel="stylesheet" href="nuestros_productos.css" type="text/css">
     <link rel="icon" href="imagenes/logo_gym.ico">
+    <script type="text/javascript" src="Funciones.js"></script>
 </head>
 
 <body>
@@ -17,64 +18,105 @@
     <img id="logo" src="imagenes/logo_gym.png" alt="logo">
 </header>
 
+
 <nav>
     <a href="index.html">Inicio</a>
     <a href="clases.html">Clases</a>
 </nav>
 
+
 <div class="container-items">
+
     <div class="item">
+
         <figure>
-            <img src="https://farmacityar.vteximg.com.br/arquivos/ids/228583-600-600/120346_suplemento-dietario-whey-x-pro-x-1000-g_imagen-1.jpg?v=637988670651230000"
+            <img src="imagenes/proteina.jpg"
                  alt="producto">
         </figure>
+
         <div class="info-product">
             <h2>Proteina en polvo</h2>
             <p class="price">$10000</p>
-            <button>Añadir al carrito</button>
+            <button id="proteina" onclick="sumar_al_carrito(this.id)">Añadir al carrito</button>
         </div>
+
     </div>
+
     <div class="item">
+
         <figure>
-            <img src="https://www.gentech.com.ar/wp-content/uploads/2019/06/Iron-Bar-Barra-Proteinas-Gentech-_0003_CAJA-IRON-BAR-CHOCOLATE.jpg"
+            <img src="imagenes/barras.png"
                  alt="producto">
         </figure>
+
         <div class="info-product">
             <h2>Barras energeticas</h2>
             <p class="price">$5000</p>
-            <button>Añadir al carrito</button>
+            <button id="barras" onclick="sumar_al_carrito(this.id)">Añadir al carrito</button>
         </div>
+
     </div>
+
     <div class="item">
+
         <figure>
-            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/885/784/products/bolsa-chocolate1-104ad091be4e5bdc5616525469208968-640-0.jpg"
-                 alt="producto">
+            <img src="imagenes/ultramass.png" alt="producto">
         </figure>
+
         <div class="info-product">
             <h2>Ultra Mass</h2>
             <p class="price">$10000</p>
-            <button>Añadir al carrito</button>
+            <button id="ultramass" onclick="sumar_al_carrito(this.id)">Añadir al carrito</button>
         </div>
+
     </div>
+
     <div class="item">
+
         <figure>
-            <img src="https://http2.mlstatic.com/D_NQ_NP_623830-MLA53826845886_022023-O.jpg" alt="producto">
+            <img src="imagenes/botella.png" alt="producto">
         </figure>
+
         <div class="info-product">
             <h2>Botella deportiva</h2>
             <p class="price">$2000</p>
-            <button>Añadir al carrito</button>
+            <button id="botella" onclick="sumar_al_carrito(this.id)">Añadir al carrito</button>
         </div>
+
     </div>
+
+
     <div class="item">
+
         <figure>
-            <img src="https://http2.mlstatic.com/D_NQ_NP_890943-MLA50431951375_062022-V.jpg" alt="producto">
+            <img src="imagenes/kit.png" alt="producto">
         </figure>
+
         <div class="info-product">
             <h2>Kit set entrenamiento</h2>
             <p class="price">$6000</p>
-            <button>Añadir al carrito</button>
+            <button id="kit" onclick="sumar_al_carrito(this.id)">Añadir al carrito</button>
         </div>
+
+    </div>
+
+
+    <div class="carrito">
+        <h3>Carrito</h3>
+
+        <div id="total">
+            <p>Total:$
+                <span id="span" name="compra_total"></span>
+            </p>
+        </div>
+        <p>
+            <button id="limpiar" onclick="limpiar()">Limpiar carrito</button>
+        </p>
+
+        <p>
+            <button id="comprar" onclick="agradecimiento()">Confirmar compra</button>
+        </p>
+
     </div>
 </div>
 

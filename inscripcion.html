@@ -8,9 +8,11 @@
     <meta content="gym,fitness,crossfit" name="palabras-principales">
     <link rel="stylesheet" href="inscripcion.css" type="text/css">
     <link rel="icon" href="imagenes/logo_gym.ico">
+    <script type="text/javascript" src="Funciones.js"></script>
 </head>
 
 <body>
+
 <header>
     <h1>Energym</h1>
     <img id="logo" src="imagenes/logo_gym.png" alt="logo">
@@ -21,9 +23,10 @@
     <a href="nuestros_productos.html">Nuestros productos</a>
     <a href="clases.html">Clases</a>
 </nav>
+
 <div>
     <h2>Inscripcion al gimnasio</h2>
-    <form id="formulario_inscripcion">
+    <form name="formulario_inscripcion">
         <p>
             <label for="nombre"> Nombre:</label> <input type="text" name="nombre" placeholder="nombre" id="nombre">
         </p>
@@ -45,21 +48,24 @@
         </p>
 
         <p>
-            <label for="numero_telefono"> Nro. de telefono:</label> <input type="tel" name="tel"
+            <label for="numero_telefono"> Nro. de telefono:</label> <input type="text" name="tel"
                                                                            placeholder="nro.telefono"
-                                                                           id="numero_telefono">
+                                                                           id="numero_telefono"
+                                                                           onchange="cambiarNumLet(this.value,this.id)">
         </p>
 
         <p>
             <label for="numero_de_tarjeta"> Numero de tarjeta:</label> <input type="text" name="numero_de_tarjeta"
                                                                               placeholder="Nro de tarjeta"
                                                                               pattern="[0-9]{13,16}" required
-                                                                              id="numero_de_tarjeta">
+                                                                              id="numero_de_tarjeta"
+                                                                              onchange="cambiarNumLet(this.value,this.id)">
         </p>
         <p>
-            <label for="codigo_seguridad"> Codigo de seguridad:</label> <input type="number" name="codigo_seguridad"
+            <label for="codigo_seguridad"> Codigo de seguridad:</label> <input type="text" name="codigo_seguridad"
                                                                                placeholder="cod.seguridad"
-                                                                               id="codigo_seguridad">
+                                                                               id="codigo_seguridad"
+                                                                               onchange="cambiarNumLet(this.value,this.id)">
 
         </p>
 
@@ -76,7 +82,7 @@
             <label for="comentario"> Agregue un comentario:</label> <textarea id="comentario"> </textarea>
         </p>
         <p>
-            <button id="boton" type="button">Inscribirse</button>
+            <button id="boton" type="button" onclick="mostrarAlerta()">Inscribirse</button>
         </p>
 
     </form>
