@@ -55,7 +55,7 @@ h2 {
 section {
     margin-left: 20px;
     margin-right: 20px;
-    background-color: rgba(153, 154, 64, 0.48);
+    background-color: rgba(220,221,83,0.45);
     border-radius: 10px;
     margin-bottom: 20px;
     align-items: center;
@@ -88,6 +88,7 @@ p {
 
 #myCanvas{
 margin-left: 30px;
-background-color: rgba(248, 249, 255, 0.27);
+background-color: rgba(41,37,43,0.58);
+    border-radius: 10px;
 }
 
