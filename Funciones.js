@@ -1,11 +1,11 @@
-let total = 0; /** esta variable inicializa el carrito en 0*/
-
 /**
  * Suma los elementos al carrito
  * @method sumar_al_carrito
  * @param (string) id - El id de los elementos agregados al carrito
  * @return la suma total del carrito
  */
+let total = 0; /** esta variable inicializa el carrito en 0*/
+
 function sumar_al_carrito(id) {
     if (id == "proteina") {
         total = total + 10000;
@@ -92,9 +92,8 @@ function animarCorredor() {
     var img = new Image();
     img.src = "imagenes/empuje.png";
     canvas.width = canvas.width;
-
     img.onload = function () {
-        ctx.drawImage(img, x, 0)
+        ctx.drawImage(img, x, 0);
     }
     if (x > canvas.width) {
         x = 0;

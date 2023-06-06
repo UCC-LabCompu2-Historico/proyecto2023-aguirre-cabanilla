@@ -86,4 +86,8 @@ p {
 
 }
 
+#myCanvas{
+margin-left: 30px;
+background-color: rgba(102,102,94,0.44);
+}
 
