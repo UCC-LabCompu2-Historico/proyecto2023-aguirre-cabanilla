@@ -1,5 +1,4 @@
 # Energym
-Página oficial de Energym.
 Link al sitio:[Gimnasio](https://ucc-labcompu2.github.io/proyecto2023-aguirre-cabanilla/)
 
 En nuestra página puedes hacer un recorrido muy interesante de nuestro gimnasio, desde sus instalaciones
@@ -14,6 +13,6 @@ Aguirre Ignacio Facundo .
 Cabanilla Tomas.
 
 ## Tecnologias usadas
--Html.
--CSS.
--JavaScript.
+- Html.
+- CSS.
+- JavaScript.
