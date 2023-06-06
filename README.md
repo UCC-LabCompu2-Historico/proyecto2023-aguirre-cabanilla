@@ -14,6 +14,6 @@ Aguirre Ignacio Facundo .
 Cabanilla Tomas.
 
 ## Tecnologias usadas
-Html.
-CSS.
-JavaScript.
+-Html.
+-CSS.
+-JavaScript.
