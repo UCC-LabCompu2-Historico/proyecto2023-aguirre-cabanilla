@@ -25,47 +25,56 @@
 </nav>
 
 <div>
-    <h2>Inscripcion al gimnasio</h2>
+    <h2>Inscripción al gimnasio</h2>
     <form name="formulario_inscripcion">
         <p>
-            <label for="nombre"> Nombre:</label> <input type="text" name="nombre" placeholder="nombre" id="nombre">
+            <label for="nombre"> Nombre:</label>
+            <input type="text" name="nombre" placeholder="nombre" maxlength="15" id="nombre" >
         </p>
         <p>
-            <label for="apellido">Apellido:</label> <input type="text" name="apellido" placeholder="apellido"
-                                                           id="apellido">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" placeholder="apellido" maxlength="18"
+                   id="apellido" >
         </p>
         <p>
-            Sexo: <label for="masculino"> Masculino</label> <input type="radio" name="Sexo" value="masculino"
-                                                                   id="masculino">
-            <label for="femenino">Femenino</label> <input type="radio" name="Sexo" value="Femenino" id="femenino">
+            Sexo: <label for="masculino"> Masculino</label>
+            <input type="radio" name="Sexo" value="masculino"
+                   id="masculino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" name="Sexo" value="Femenino" id="femenino">
         </p>
         <p>
-            <label for="edad"> Edad:</label> <input type="number" name="edad" placeholder="edad" id="edad">
+            <label for="edad"> Edad:</label>
+            <input type="number" name="edad" placeholder="edad" maxlength="4" id="edad" >
         </p>
         <p>
-            <label for="email"> Email:</label> <input type="email" name="email" placeholder="email@dominio.com"
-                                                      id="email">
+            <label for="email"> Email:</label>
+            <input type="email" name="email" placeholder="email@dominio.com" maxlength="30"
+                   id="email">
         </p>
 
         <p>
-            <label for="numero_telefono"> Nro. de telefono:</label> <input type="text" name="tel"
-                                                                           placeholder="nro.telefono"
-                                                                           id="numero_telefono"
-                                                                           onchange="cambiarNumLet(this.value,this.id)">
+            <label for="numero_telefono"> Nro. de teléfono:</label>
+            <input type="text" name="tel" maxlength="12"
+                   placeholder="nro.telefono"
+                   id="numero_telefono"
+                   onchange="cambiarNumLet(this.value,this.id)">
         </p>
 
         <p>
-            <label for="numero_de_tarjeta"> Numero de tarjeta:</label> <input type="text" name="numero_de_tarjeta"
-                                                                              placeholder="Nro de tarjeta"
-                                                                              pattern="[0-9]{13,16}" required
-                                                                              id="numero_de_tarjeta"
-                                                                              onchange="cambiarNumLet(this.value,this.id)">
+            <label for="numero_de_tarjeta"> Número de tarjeta:</label>
+            <input type="text" name="numero_de_tarjeta" maxlength="16"
+                   placeholder="Nro de tarjeta"
+                   pattern="[0-9]{13,16}" required
+                   id="numero_de_tarjeta"
+                   onchange="cambiarNumLet(this.value,this.id)">
         </p>
         <p>
-            <label for="codigo_seguridad"> Codigo de seguridad:</label> <input type="text" name="codigo_seguridad"
-                                                                               placeholder="cod.seguridad"
-                                                                               id="codigo_seguridad"
-                                                                               onchange="cambiarNumLet(this.value,this.id)">
+            <label for="codigo_seguridad"> Código de seguridad:</label>
+            <input type="text" name="codigo_seguridad" maxlength="4"
+                   placeholder="cod.seguridad"
+                   id="codigo_seguridad"
+                   onchange="cambiarNumLet(this.value,this.id)">
 
         </p>
 
@@ -79,7 +88,8 @@
             </select>
         </p>
         <p>
-            <label for="comentario"> Agregue un comentario:</label> <textarea id="comentario"> </textarea>
+            <label for="comentario"> Agregue un comentario:</label>
+            <textarea id="comentario" maxlength="120"> </textarea>
         </p>
         <p>
             <button id="boton" type="button" onclick="mostrarAlerta()">Inscribirse </button>

@@ -86,10 +86,10 @@ x = 0;
 dx = 2;
 
 function animarCorredor() {
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    let img = new Image();
 
-    var img = new Image();
     img.src = "imagenes/empuje.png";
     canvas.width = canvas.width;
     img.onload = function () {

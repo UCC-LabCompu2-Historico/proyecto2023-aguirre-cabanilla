@@ -12,7 +12,7 @@ la compra.
 Aguirre Ignacio Facundo .
 Cabanilla Tomas.
 
-## Tecnologas usadas
+## Tecnologías usadas
 - Html.
 - CSS.
 - JavaScript.
