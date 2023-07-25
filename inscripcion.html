@@ -29,28 +29,22 @@
     <form name="formulario_inscripcion">
         <p>
             <label for="nombre"> Nombre:</label>
-            <input type="text" name="nombre" placeholder="nombre" maxlength="15" id="nombre" >
+            <input type="text" name="nombre" placeholder="nombre" maxlength="15" id="nombre" onchange="validartexto(this.id)">
         </p>
         <p>
             <label for="apellido">Apellido:</label>
             <input type="text" name="apellido" placeholder="apellido" maxlength="18"
-                   id="apellido" >
+                   id="apellido" onchange="validartexto(this.id)">
         </p>
-        <p>
-            Sexo: <label for="masculino"> Masculino</label>
-            <input type="radio" name="Sexo" value="masculino"
-                   id="masculino">
-            <label for="femenino">Femenino</label>
-            <input type="radio" name="Sexo" value="Femenino" id="femenino">
-        </p>
+
         <p>
             <label for="edad"> Edad:</label>
-            <input type="number" name="edad" placeholder="edad" maxlength="4" id="edad" >
+            <input type="number" name="edad" placeholder="edad" maxlength="4" id="edad" onchange="cambiarNumLet(this.value,this.id)">
         </p>
         <p>
             <label for="email"> Email:</label>
             <input type="email" name="email" placeholder="email@dominio.com" maxlength="30"
-                   id="email">
+                   id="email" onchange="validarArroba_punto(this.value)">
         </p>
 
         <p>
@@ -92,7 +86,7 @@
             <textarea id="comentario" maxlength="120"> </textarea>
         </p>
         <p>
-            <button id="boton" type="button" onclick="mostrarAlerta()">Inscribirse </button>
+            <button id="boton" type="button" onclick="validar_formulario()">Inscribirse </button>
         </p>
 
     </form>

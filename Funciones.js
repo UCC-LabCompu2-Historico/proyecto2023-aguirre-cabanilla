@@ -64,8 +64,10 @@ function cambiarNumLet(valor, id) {
             document.formulario_inscripcion.codigo_seguridad.value = " ";
         } else if (id == "numero_telefono") {
             document.formulario_inscripcion.tel.value = " ";
-        }
+        } else if (id == "edad") {
+            document.formulario_inscripcion.edad.value = " ";
 
+        }
     }
 }
 
@@ -100,3 +102,50 @@ function animarCorredor() {
     }
     x += dx;
 }
+
+function contieneNumero(cadena) {
+    return /\d/.test(cadena);
+}
+
+function validartexto(id) {
+    var nombreIngresado = document.getElementById("nombre").value;
+    var apellidoIngresado = document.getElementById("apellido").value;
+
+    if (contieneNumero(nombreIngresado)) {
+        alert("No puedes ingresar números en el nombre. Inténtalo de nuevo.");
+        document.formulario_inscripcion.nombre.value = " ";
+    }
+    else if (contieneNumero(apellidoIngresado)) {
+        alert("No puedes ingresar números en el apellido. Inténtalo de nuevo.");
+        document.formulario_inscripcion.apellido.value = " ";
+    }
+
+}
+function validarArroba_punto(valor) {
+    if (!valor.includes('@')) {
+        alert("El texto debe contener el símbolo @ (arroba).");
+    }else if (!valor.includes('.')) {
+        alert("El texto debe contener un punto.");
+    }
+}
+
+function validar_formulario(){
+    var nombre=document.getElementById("nombre").value;
+    var apellido=document.getElementById("apellido").value;
+    var edad=document.getElementById("edad").value;
+    var email=document.getElementById("email").value;
+    var numero_telefono=document.getElementById("numero_telefono").value;
+    var numero_tarjeta=document.getElementById("numero_de_tarjeta").value;
+    var codigo_seguridad=document.getElementById("codigo_seguridad").value;
+    var tipo_pago=document.getElementById("tipo_de_pago").value;
+
+
+    if ((nombre === '' || apellido === '' || edad === '' || email=== '' || numero_telefono === ''|| numero_tarjeta=== '' || codigo_seguridad=== '' || tipo_pago==='')) {
+        alert("Ninguna casilla debe estar vacía");
+    }
+    else{
+        alert("Gracias por su inscripcion")
+    }
+
+}
+
