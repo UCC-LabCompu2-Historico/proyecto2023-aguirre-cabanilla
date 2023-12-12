@@ -1,14 +1,17 @@
+/* Establece margen y padding a cero para todos los elementos */
 * {
     padding: 0;
     margin: 0;
 }
 
+/* Configura el fondo de la página con una imagen fija */
 body {
     background-image: url("imagenes/Fondo_gym.jpeg");
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
+/* Estilos para la sección de encabezado */
 header {
     background-color: rgba(80, 77, 80, 0.74);
     display: flex;
@@ -16,12 +19,14 @@ header {
     align-items: center;
 }
 
+/* Estilos para el logo en el encabezado */
 #logo {
     border-radius: 50%;
     width: 100px;
     height: 100px;
 }
 
+/* Estilos para la barra de navegación */
 nav {
     background-color: rgba(248, 249, 255, 0.27);
     width: 100%;
@@ -30,6 +35,7 @@ nav {
     margin-bottom: 40px;
 }
 
+/* Estilos para los enlaces en la barra de navegación */
 nav a {
     font-size: 20px;
     text-decoration: none;
@@ -38,6 +44,7 @@ nav a {
     font-weight: bold;
 }
 
+/* Estilos para el título principal */
 h1 {
     color: beige;
     padding: 30px;
@@ -47,11 +54,13 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Estilos para los títulos de sección */
 h2 {
     margin-bottom: 15px;
     font-size: 30px;
 }
 
+/* Estilos generales para las secciones de contenido */
 section {
     margin-left: 20px;
     margin-right: 20px;
@@ -59,23 +68,23 @@ section {
     border-radius: 10px;
     margin-bottom: 20px;
     align-items: center;
-
 }
 
+/* Estilos para los párrafos de descripción */
 p {
     margin-left: 10px;
     font-weight: bold;
     font-size: 20px;
     width: 60%;
-
     margin-bottom: 10px;
-
 }
 
+/* Estilos para la estructura de las clases */
 .clase {
     display: flex;
 }
 
+/* Estilos para las imágenes de las clases */
 .imagen_clase {
     width: 200px;
     height: 200px;
@@ -83,12 +92,11 @@ p {
     float: left;
     margin-left: 200px;
     margin-bottom: 10px;
-
 }
 
+/* Estilos para el lienzo utilizado para animar el corredor */
 #myCanvas{
-margin-left: 30px;
-background-color: rgba(41,37,43,0.58);
+    margin-left: 30px;
+    background-color: rgba(41,37,43,0.58);
     border-radius: 10px;
 }
-

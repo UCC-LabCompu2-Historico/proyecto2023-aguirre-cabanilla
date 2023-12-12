@@ -42,10 +42,10 @@ function agradecimiento() {
         alert("Primero elija un articulo");
     }
     if (total != 0) {
-        alert("Gracias por su compra");
+        window.location.href="inscripcion.html";
     }
     total = 0;
-    document.getElementsByName("compra_total")[0].innerHTML = "";
+    document.getElementsByName("compra_total")[0].innerHTML="";
 }
 
 /** DOCUMENTACION EN JAVASCRIPT
@@ -71,13 +71,6 @@ function cambiarNumLet(valor, id) {
     }
 }
 
-/** Descripción: mostrar alerta
- * @method mostrarAlerta
- * @return
- */
-function mostrarAlerta() {
-    alert("Gracias por su inscripción !");
-}
 
 
 /** Descripción: Animacion de canva
@@ -102,11 +95,21 @@ function animarCorredor() {
     }
     x += dx;
 }
-
+/**
+ * Verifica si la cadena contiene al menos un número.
+ * @function contieneNumero
+ * @param {string} cadena - Cadena de texto a verificar.
+ * @returns {boolean} - Devuelve true si la cadena contiene al menos un número, de lo contrario, false.
+ */
 function contieneNumero(cadena) {
     return /\d/.test(cadena);
 }
-
+/**
+ * Valida el nombre y apellido ingresados, mostrando una alerta si contienen números.
+ * @function validartexto
+ * @param {string} id - ID del campo de entrada de texto que se está validando.
+ * @returns {void} - La función no retorna un valor específico, pero puede mostrar alertas y ajustar el contenido del campo de texto.
+ */
 function validartexto(id) {
     var nombreIngresado = document.getElementById("nombre").value;
     var apellidoIngresado = document.getElementById("apellido").value;
@@ -121,6 +124,12 @@ function validartexto(id) {
     }
 
 }
+/**
+ * Valida la presencia del símbolo @ (arroba) y al menos un punto en la dirección de correo electrónico.
+ * @function validarArroba_punto
+ * @param {string} valor - Valor de la dirección de correo electrónico a validar.
+ * @returns {void} - La función no retorna un valor específico, pero puede mostrar alertas.
+ */
 function validarArroba_punto(valor) {
     if (!valor.includes('@')) {
         alert("El texto debe contener el símbolo @ (arroba).");
@@ -128,7 +137,11 @@ function validarArroba_punto(valor) {
         alert("El texto debe contener un punto.");
     }
 }
-
+/**
+ * Valida que ninguna casilla del formulario esté vacía antes de la inscripción.
+ * @function validar_formulario
+ * @returns {void} - La función no retorna un valor específico, pero puede mostrar alertas.
+ */
 function validar_formulario(){
     var nombre=document.getElementById("nombre").value;
     var apellido=document.getElementById("apellido").value;
@@ -144,8 +157,55 @@ function validar_formulario(){
         alert("Ninguna casilla debe estar vacía");
     }
     else{
-        alert("Gracias por su inscripcion")
+        alert("Gracias por ayudarnos a crecer");
+        var nombre=document.getElementById("nombre").value;
+        mover_nombre_horizontalmente(nombre);
+
     }
 
+
+}
+/**
+ * Mueve un nombre horizontalmente en el canvas.
+ * @function mover_nombre_horizontalmente
+ * @param {string} nombre - Texto que se moverá horizontalmente en el canvas.
+ * @returns {void} - La función no retorna un valor específico, pero anima el texto en el canvas.
+ */
+function mover_nombre_horizontalmente(nombre) {
+    document.getElementById("nombre").value= " ";
+    document.getElementById("apellido").value= " ";
+    document.getElementById("edad").value= " ";
+    document.getElementById("email").value= " ";
+    document.getElementById("numero_telefono").value= " ";
+    document.getElementById("numero_de_tarjeta").value= " ";
+    document.getElementById("codigo_seguridad").value= " ";
+    document.getElementById("tipo_de_pago").value= " ";
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // Inicializar la posición
+    var x = -ctx.measureText(nombre).width; // Iniciar fuera del canvas para un efecto de entrada
+    var y = canvas.height / 2;
+
+    // Establecer intervalo para el movimiento horizontal
+    var velocidadX = 2; // Ajustar la velocidad según preferencias
+
+    var intervalo = setInterval(function () {
+        // Limpiar el canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Dibujar el texto en la nueva posición
+        ctx.font = "10pt Verdana";
+        ctx.fillStyle = "white";
+        ctx.fillText(nombre, x, y);
+
+        // Actualizar la posición para el siguiente intervalo
+        x += velocidadX;
+
+        // Detener el movimiento después de cierta distancia (ajustar según necesidades)
+        if (x > canvas.width) {
+            clearInterval(intervalo);
+        }
+    }, 20); // Cambiar el valor para ajustar la velocidad del movimiento
 }
 

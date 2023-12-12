@@ -1,100 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Informacion sobre el navegador-->
 <head>
     <meta charset="UTF-8">
     <title>Energym</title>
+    <!-- Etiquetas meta con información adicional sobre el documento -->
     <meta content="Aguirre Ignacio,Cabanilla Tomas" name="autores">
     <meta content="Mi gimnasio" name="descripcion">
     <meta content="gym,fitness,crossfit" name="palabras-principales">
+    <!-- Enlace al css de nuestros_productos-->
     <link rel="stylesheet" href="nuestros_productos.css" type="text/css">
+    <!-- Icono -->
     <link rel="icon" href="imagenes/logo_gym.ico">
+    <!-- Llamo al archivo Funciones.Js -->
     <script type="text/javascript" src="Funciones.js"></script>
 </head>
-
+<!-- Contenido que aparece en la pagina-->
 <body>
-
+<!-- Titulo principal de la pagina -->
 <header>
     <h1>Energym</h1>
     <img id="logo" src="imagenes/logo_gym.png" alt="logo">
 </header>
-
-
+<!-- enlaces a diferentes páginas-->
 <nav>
     <a href="index.html">Inicio</a>
     <a href="clases.html">Clases</a>
 </nav>
 
+<!-- Contenedor de la información del producto -->
+<div class="contenedor_productos">
 
-<div class="container-items">
-
-    <div class="item">
-
+    <div class="productos">
+        <!-- Seccion de imagenes -->
         <figure>
             <img src="imagenes/proteina.jpg"
                  alt="producto">
         </figure>
 
-        <div class="info-product">
+        <div class="info-producto">
             <h2>Proteina en polvo</h2>
-            <p class="price">$10000</p>
+            <p class="precio">$10000</p>
+            <!-- Javascript al apretar el boton añadir al carrito , con su id proteina,la funcion sumar al carrito tiene como parametro el id llamado proteina-->
             <button id="proteina" onclick="sumar_al_carrito(this.id)">Añadir al carrito</button>
         </div>
 
     </div>
 
-    <div class="item">
+    <div class="productos">
 
         <figure>
             <img src="imagenes/barras.png"
                  alt="producto">
         </figure>
 
-        <div class="info-product">
+        <div class="info-producto">
             <h2>Barras energeticas</h2>
-            <p class="price">$5000</p>
+            <p class="precio">$5000</p>
             <button id="barras" onclick="sumar_al_carrito(this.id)">Añadir al carrito</button>
         </div>
 
     </div>
 
-    <div class="item">
+    <div class="productos">
 
         <figure>
             <img src="imagenes/ultramass.png" alt="producto">
         </figure>
 
-        <div class="info-product">
+        <div class="info-producto">
             <h2>Ultra Mass</h2>
-            <p class="price">$10000</p>
+            <p class="precio">$10000</p>
             <button id="ultramass" onclick="sumar_al_carrito(this.id)">Añadir al carrito</button>
         </div>
 
     </div>
 
-    <div class="item">
+    <div class="productos">
 
         <figure>
             <img src="imagenes/botella.png" alt="producto">
         </figure>
 
-        <div class="info-product">
+        <div class="info-producto">
             <h2>Botella deportiva</h2>
-            <p class="price">$2000</p>
+            <p class="precio">$2000</p>
             <button id="botella" onclick="sumar_al_carrito(this.id)">Añadir al carrito</button>
         </div>
 
     </div>
 
 
-    <div class="item">
+    <div class="productos">
 
         <figure>
             <img src="imagenes/kit.png" alt="producto">
         </figure>
 
-        <div class="info-product">
+        <div class="info-producto">
             <h2>Kit set entrenamiento</h2>
-            <p class="price">$6000</p>
+            <p class="precio">$6000</p>
             <button id="kit" onclick="sumar_al_carrito(this.id)">Añadir al carrito</button>
         </div>
 
@@ -106,6 +111,8 @@
 
         <div id="total">
             <p>Total:$
+                <!-- contener información dinámica del precio total de la compra -->
+                <!-- contenedor en linea,etiqueta dentro de un parrafo -->
                 <span id="span" name="compra_total"></span>
             </p>
         </div>

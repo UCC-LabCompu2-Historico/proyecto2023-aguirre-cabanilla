@@ -1,16 +1,21 @@
+/*fuente de letra*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
-
+/* Estilos globales para resetear márgenes, rellenos y ajustar el modelo de caja */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 body {
     background-image: url("imagenes/Fondo_gym.jpeg");
+    /*  fondo de la imagen fija */
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
+/* Estilos para el encabezado, utilizando flexbox para centrar elementos */
 header {
     background-color: rgba(80, 77, 80, 0.74);
     display: flex;
@@ -18,12 +23,14 @@ header {
     align-items: center;
 }
 
+/* Estilos para el logo, con bordes redondeados y tamaño específico */
 #logo {
     border-radius: 50%;
     width: 100px;
     height: 100px;
 }
 
+/* Estilos para la los liks a la parte de la pagina inicio y pagino, con fondo y alineación */
 nav {
     background-color: rgba(248, 249, 255, 0.27);
     width: 100%;
@@ -32,13 +39,17 @@ nav {
     margin-bottom: 40px;
 }
 
+/* Estilos para liks a la parte de la pagina inicio y pagino */
 nav a {
     font-size: 20px;
     text-decoration: none;
     color: beige;
+    /*espacio entre el borde y el contenido*/
     padding: 9px;
     font-weight: bold;
 }
+
+/* Estilos para el título principal, con color, tamaño, alineación y fuente específicos */
 h1 {
     color: beige;
     padding: 30px;
@@ -46,139 +57,50 @@ h1 {
     text-align: center;
     font-style: italic;
     font-family: 'Montserrat', sans-serif;
-
 }
 
+/* Estilos generales para las imágenes */
 img {
     max-width: 100%;
 }
 
-.count-products {
-    position: absolute;
-    top: 55%;
-    right: 0;
-
-    background-color: #000;
-    color: #fff;
-    width: 25px;
-    height: 25px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-
-.container-cart-products {
-    position: absolute;
-    top: 50px;
-    right: 0;
-
-    background-color: #fff;
-    width: 400px;
-    z-index: 1;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-    border-radius: 10px;
-
-}
-
-.cart-product {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
-}
-
-.info-cart-product {
-    display: flex;
-    justify-content: space-between;
-    flex: 0.8;
-}
-
-.titulo-producto-carrito {
-    font-size: 20px;
-}
-
-.precio-producto-carrito {
-    font-weight: 700;
-    font-size: 20px;
-    margin-left: 10px;
-}
-
-.cantidad-producto-carrito {
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.icon-close {
-    width: 25px;
-    height: 25px;
-}
-
-.icon-close:hover {
-    stroke: red;
-    cursor: pointer;
-}
-
-.cart-total {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    gap: 20px;
-}
-
-.cart-total h3 {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.total-pagar {
-    font-size: 20px;
-    font-weight: 900;
-}
-
-.hidden-cart {
-    display: none;
-}
-
-
-.container-items {
+/* Estilos para el contenedor de productos, utilizando una cuadrícula y fondo específicos */
+.contenedor_productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     background-color: rgba(138, 129, 119, 0.46);
-
 }
 
-.item {
+/* Estilos para la sección de productos, con bordes redondeados y sombra al hacer hover */
+.productos {
     border-radius: 10px;
 }
-
-.item:hover {
+/* Efecto de sombra cuando el mouse pasa sobre el elemento con la clase .productos */
+.productos:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
-.item img {
+/* Estilos específicos para las imágenes de productos, con transición en el hover */
+.productos img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
+    /* Agrega una transición suave a todas las propiedades durante medio segundo (0.5 segundos) */
     transition: all .5s;
 }
-
-.item figure {
+/*para que la imagen del producto al agrandarse no se salga del rectangulo*/
+.productos figure {
     overflow: hidden;
 }
-
-.item:hover img {
+/* Aplica un efecto de escala a la imagen dentro del elemento .productos cuando el mouse pasa sobre él */
+.productos:hover img {
     transform: scale(1.2);
 }
 
-.info-product {
+/* Estilos para la información del producto, espacio entre los bordes y el contenido */
+.info-producto {
     padding: 15px 30px;
     line-height: 2;
     display: flex;
@@ -186,12 +108,14 @@ img {
     gap: 10px;
 }
 
-.price {
+/* Estilos para el precio del producto */
+.precio {
     font-size: 18px;
     font-weight: 900;
 }
 
-.info-product button {
+/* Estilos para el botón de añadir al carrito */
+.info-producto button {
     border: none;
     background: none;
     background-color: #000;
@@ -199,20 +123,25 @@ img {
     padding: 15px 10px;
     cursor: pointer;
 }
-.carrito{
+
+/* Estilos para la sección del carrito, con alineación y márgenes específicos */
+.carrito {
     text-align: center;
     border-radius: 10px;
-margin-left: 120px;
+    margin-left: 120px;
     margin-right: 60px;
-margin-bottom: 170px;
+    margin-bottom: 170px;
     background-color: white;
 }
-h3{
 
+/* Estilos para el título del carrito */
+h3 {
     font-size: 40px;
     margin-bottom: 70px;
 }
-.carrito button{
+
+/* Estilos para los botones del carrito */
+.carrito button {
     margin-bottom: 20px;
     background-color: darkkhaki;
     color: white;
@@ -221,9 +150,10 @@ h3{
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
 }
-#total{
+
+/* Estilos para el total del carrito */
+#total {
     font-size: 40px;
     margin-bottom: 60px;
 }

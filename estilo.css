@@ -1,16 +1,21 @@
+/* Importación de la fuente Montserrat desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
 
+/* Estilos generales de reinicio */
 * {
     padding: 0;
     margin: 0;
 }
 
+/* Estilos para el cuerpo del documento */
 body {
+    /* Fondo con imagen fija */
     background-image: url("imagenes/Fondo_gym.jpeg");
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
+/* Estilos para la sección de encabezado */
 header {
     background-color: rgba(80, 77, 80, 0.74);
     display: flex;
@@ -18,12 +23,14 @@ header {
     align-items: center;
 }
 
+/* Estilos para el logotipo */
 #logo {
     border-radius: 50%;
     width: 100px;
     height: 100px;
 }
 
+/* Estilos para la barra de navegación */
 nav {
     background-color: rgba(248, 249, 255, 0.27);
     width: 100%;
@@ -32,6 +39,7 @@ nav {
     margin-bottom: 40px;
 }
 
+/* Estilos para los enlaces de navegación */
 nav a {
     font-size: 20px;
     text-decoration: none;
@@ -40,6 +48,7 @@ nav a {
     font-weight: bold;
 }
 
+/* Estilos para los encabezados h1 */
 h1 {
     color: beige;
     padding: 30px;
@@ -47,59 +56,62 @@ h1 {
     text-align: center;
     font-style: italic;
     font-family: 'Montserrat', sans-serif;
-
 }
 
+/* Estilos para los encabezados h2 */
 h2 {
     font-style: initial;
     color: azure;
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 25px;
-
 }
 
+/* fondo para la sección de instalaciones */
 #instalaciones {
     background-color: rgba(42, 38, 40, 0.43);
 }
 
+/* Estilos para el mosaico de imágenes en las instalaciones */
 .mosaico {
     display: flex;
     flex-direction: column;
     margin-left: 80px;
 }
 
+/* Estilos para las filas en el mosaico */
 .fila {
     display: flex;
     flex-direction: row;
 }
 
+/* Estilos para las imágenes en las filas */
 .fila img {
     width: 400px;
     height: 300px;
-
 }
 
+/* Estilos para la sección de horarios */
 #horarios {
     background-color: rgba(42, 38, 40, 0.43);
     margin-top: 30px;
-
 }
 
+/* Estilos para las imágenes de horarios */
 #horarios img {
-
     width: 600px;
     height: 600px;
     display: block;
     margin: 0 auto;
-
 }
 
+/* Estilos para la sección de inscripción */
 #inscripcion {
     margin-top: 30px;
     background-color: rgba(42, 38, 40, 0.43);
 }
 
+/* Estilos para la sección de planes */
 #planes {
     column-count: 3;
     column-gap: 100px;
@@ -109,10 +121,12 @@ h2 {
     border: 4px solid black;
 }
 
+/* Estilos para los encabezados h2 en la sección de planes */
 #planes h2 {
     color: bisque;
 }
 
+/* Estilos para los elementos de lista en los planes */
 li {
     margin-left: 40px;
     margin-bottom: 15px;
@@ -122,6 +136,7 @@ li {
     font-style: unset;
 }
 
+/* Estilos para los botones de inscripción */
 button {
     margin-left: 20px;
     margin-bottom: 10px;
@@ -135,14 +150,14 @@ button {
     transition: all 0.3s ease 0s;
 }
 
+/* Estilos para los enlaces */
 a {
     text-decoration: none;
     outline: none;
     color: black;
 }
 
+/* Estilos al pasar el ratón sobre los botones */
 button:hover {
     background-color: rgba(137, 161, 94, 0.73);
 }
-
-

@@ -1,75 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <title>Energym</title>
+
+    <!-- Metadatos adicionales -->
     <meta content="Aguirre Ignacio,Cabanilla Tomas" name="autores">
     <meta content="Mi gimnasio" name="descripcion">
     <meta content="gym,fitness,crossfit" name="palabras-principales">
+
+    <!-- Enlace a la hoja de estilo externa -->
     <link rel="stylesheet" href="inscripcion.css" type="text/css">
+
+    <!-- Icono de la página -->
     <link rel="icon" href="imagenes/logo_gym.ico">
+
+    <!-- Enlace al archivo de funciones JavaScript -->
     <script type="text/javascript" src="Funciones.js"></script>
 </head>
 
 <body>
 
+<!-- Encabezado de la página -->
 <header>
     <h1>Energym</h1>
     <img id="logo" src="imagenes/logo_gym.png" alt="logo">
 </header>
 
+<!-- Barra de navegación -->
 <nav>
     <a href="index.html">Inicio</a>
     <a href="nuestros_productos.html">Nuestros productos</a>
     <a href="clases.html">Clases</a>
 </nav>
 
+<!-- Formulario de inscripción al gimnasio -->
 <div>
-    <h2>Inscripción al gimnasio</h2>
+    <h2>Formulario</h2>
     <form name="formulario_inscripcion">
+
+        <!-- Campos del formulario con etiquetas y validaciones -->
         <p>
+            <!-- label es una etiqueta asociada a un campo de formulario -->
             <label for="nombre"> Nombre:</label>
+
+            <!--
+       input es un campo de entrada de texto en un formulario.
+       - type="text" especifica que es un campo de texto.
+       - name="nombre" establece el nombre del campo que se utilizará cuando se envíe el formulario.
+       - placeholder="nombre" muestra un texto de ejemplo dentro del campo antes de que se introduzca información.
+       - maxlength="15" limita la longitud máxima del texto a 15 caracteres.
+       - id="nombre" proporciona una identificación única para el campo.
+       - onchange="validartexto(this.id)" llama a la función 'validartexto' cuando se realiza un cambio en el campo.
+         El parámetro 'this.id' pasa el ID del campo como argumento a la función.
+       - Onchange evento para JS cuando un elemento del formulario cambia
+   -->
             <input type="text" name="nombre" placeholder="nombre" maxlength="15" id="nombre" onchange="validartexto(this.id)">
         </p>
+
         <p>
             <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" placeholder="apellido" maxlength="18"
-                   id="apellido" onchange="validartexto(this.id)">
+            <input type="text" name="apellido" placeholder="apellido" maxlength="18" id="apellido" onchange="validartexto(this.id)">
         </p>
 
         <p>
             <label for="edad"> Edad:</label>
             <input type="number" name="edad" placeholder="edad" maxlength="4" id="edad" onchange="cambiarNumLet(this.value,this.id)">
         </p>
+
         <p>
             <label for="email"> Email:</label>
-            <input type="email" name="email" placeholder="email@dominio.com" maxlength="30"
-                   id="email" onchange="validarArroba_punto(this.value)">
+            <input type="email" name="email" placeholder="email@dominio.com" maxlength="30" id="email" onchange="validarArroba_punto(this.value)">
         </p>
 
         <p>
             <label for="numero_telefono"> Nro. de teléfono:</label>
-            <input type="text" name="tel" maxlength="12"
-                   placeholder="nro.telefono"
-                   id="numero_telefono"
-                   onchange="cambiarNumLet(this.value,this.id)">
+            <input type="text" name="tel" maxlength="12" placeholder="nro.telefono" id="numero_telefono" onchange="cambiarNumLet(this.value,this.id)">
         </p>
 
         <p>
             <label for="numero_de_tarjeta"> Número de tarjeta:</label>
-            <input type="text" name="numero_de_tarjeta" maxlength="16"
-                   placeholder="Nro de tarjeta"
-                   pattern="[0-9]{13,16}" required
-                   id="numero_de_tarjeta"
-                   onchange="cambiarNumLet(this.value,this.id)">
+            <input type="text" name="numero_de_tarjeta" maxlength="16" placeholder="Nro de tarjeta" pattern="[0-9]{13,16}" required id="numero_de_tarjeta" onchange="cambiarNumLet(this.value,this.id)">
         </p>
+
         <p>
             <label for="codigo_seguridad"> Código de seguridad:</label>
-            <input type="text" name="codigo_seguridad" maxlength="4"
-                   placeholder="cod.seguridad"
-                   id="codigo_seguridad"
-                   onchange="cambiarNumLet(this.value,this.id)">
-
+            <input type="text" name="codigo_seguridad" maxlength="4" placeholder="cod.seguridad" id="codigo_seguridad" onchange="cambiarNumLet(this.value,this.id)">
         </p>
 
         <p>
@@ -78,20 +96,23 @@
                 <option value="mastercard">Mastercard</option>
                 <option value="naranjax">Naranja x</option>
                 <option value="visa">Visa</option>
-
             </select>
         </p>
+
         <p>
             <label for="comentario"> Agregue un comentario:</label>
             <textarea id="comentario" maxlength="120"> </textarea>
         </p>
+
+        <!-- Botón para enviar el formulario y llamada a la función de validación -->
         <p>
             <button id="boton" type="button" onclick="validar_formulario()">Inscribirse </button>
         </p>
-
     </form>
-
+    <canvas id="myCanvas" class="ejer" width="1500px" height="100px">
+    </canvas>
 </div>
 
 </body>
+
 </html>
